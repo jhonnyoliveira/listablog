@@ -1,0 +1,9 @@
+services:
+  dev:
+    container_name: listablog-dev
+    image: node:20.18.0-bookworm-slim
+    volumes:
+      - ../../:/app
+    ports:
+      - "8080:80"
+    user: node
